@@ -1,0 +1,511 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="au theme template">
+    <meta name="author" content="Hau Nguyen">
+    <meta name="keywords" content="au theme template">
+
+    <!-- Title Page-->
+    <title>Dashboard</title>
+
+    <!-- Fontfaces CSS-->
+    <link href="{% static 'css/font-face.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-4.7/css/font-awesome.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/font-awesome-5/css/fontawesome-all.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/mdi-font/css/material-design-iconic-font.min.css'%}" rel="stylesheet" media="all">
+
+    <!-- Bootstrap CSS-->
+    <link href="{% static 'vendor/bootstrap-4.1/bootstrap.min.css'%}" rel="stylesheet" media="all">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'vendor/animsition/animsition.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/wow/animate.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/css-hamburgers/hamburgers.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/slick/slick.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/select2/select2.min.css'%}" rel="stylesheet" media="all">
+    <link href="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.css'%}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'css/theme.css'%}" rel="stylesheet" media="all">
+
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.15.min.css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.15.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <!-- HEADER MOBILE-->
+        <header class="header-mobile d-block d-lg-none">
+
+            <nav class="navbar-mobile">
+                <div class="container-fluid">
+                    <ul class="navbar-mobile__list list-unstyled">
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=1">
+                                <i class="far fa-arrow-alt-circle-right"></i>La voz</a>
+
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=2">
+                                <i class="far fa-arrow-alt-circle-right"></i>Eurovisión</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=3">
+                                <i class="far fa-arrow-alt-circle-right"></i>El principe</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=4">
+                                <i class="far fa-arrow-alt-circle-right"></i>Embajada</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=5">
+                                <i class="far fa-arrow-alt-circle-right"></i>Ministerio del tiempo</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=6">
+                                <i class="far fa-arrow-alt-circle-right"></i>Objetivo iglesias</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/add">
+                                <i class="fas fa-plus-square"></i>Añadir nuevo</a>
+                        </li>
+
+
+
+                        <li class="has-sub">
+                            <a class="js-arrow" href="#">
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER MOBILE-->
+
+        <!-- MENU SIDEBAR-->
+        <aside class="menu-sidebar d-none d-lg-block">
+            <div class="logo">
+                <a href="#">
+                    <img src="{% static 'images/icon/grafico_04.gif' %}" alt="Cool Admin" />
+                </a>
+            </div>
+            <div class="menu-sidebar__content js-scrollbar1">
+                <nav class="navbar-sidebar">
+                    <ul class="list-unstyled navbar__list">
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=1">
+                                <i class="far fa-arrow-alt-circle-right"></i>La voz</a>
+
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=2">
+                                <i class="far fa-arrow-alt-circle-right"></i>Eurovisión</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=3">
+                                <i class="far fa-arrow-alt-circle-right"></i>El principe</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analysis/prueba?id=4">
+                                <i class="far fa-arrow-alt-circle-right"></i>Embajada</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=5">
+                                <i class="far fa-arrow-alt-circle-right"></i>Ministerio del tiempo</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/programa?id=6">
+                                <i class="far fa-arrow-alt-circle-right"></i>Objetivo iglesias</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:8000/analisis/add">
+                                <i class="fas fa-plus-square"></i>Añadir nuevo</a>
+                        </li>
+
+
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <!-- END MENU SIDEBAR-->
+
+        <!-- PAGE CONTAINER-->
+        <div class="page-container">
+            <!-- HEADER DESKTOP-->
+
+            <!-- HEADER DESKTOP-->
+
+            <!-- MAIN CONTENT-->
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <h1 align="center" style="font-size:40px;" >{{nombrePrograma | safe }}</h1>
+
+
+                            </div>
+                        </div>
+                        <div class="row m-t-25">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c1">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-repeat"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>{{ RTmax | safe }}</h2>
+                                                <span>Máximo de RT's</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c2">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-favorite-outline"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h2>{{ FAVmax | safe }}</h2>
+                                                <span>Máximo favoritos</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c3">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-attachment"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4>{{ HTmax | safe }}</h4>
+                                                <span>Hashtag más usado</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="overview-item overview-item--c4">
+                                    <div class="overview__inner">
+                                        <div class="overview-box clearfix">
+                                            <div class="icon">
+                                                <i class="zmdi zmdi-account"></i>
+                                            </div>
+                                            <div class="text">
+                                                <h4>{{ MENmax | safe }}</h4>
+                                                <span>Usuario más mencionado</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5" align="center">Palabras más frecuentes</h3>
+                                        <div class="chart-info">
+                                            {{ div1 | safe }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5" align="center">Dispositivo utilizado</h3>
+                                        <div class="chart-info">
+                                            {{ div4 | safe }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="au-card chart-percent-card">
+                                        <div class="au-card-inner">
+                                            <h3 class="title-2 tm-b-5" align="center">Tuits por hora </h3>
+                                            <div class="row no-gutters">
+                                                {{ div2 | safe }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="au-card chart-percent-card">
+                                        <div class="au-card-inner">
+                                            <h3 class="title-2 tm-b-5" align="center">Tuits por día </h3>
+                                            <div class="row no-gutters">
+                                                {{ div3 | safe }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="top-campaign">
+                                    <h3 class="title-3 m-b-30">Top mentions</h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-top-campaign">
+                                            <tbody>
+                                                <tr>
+                                                    <td>{{ MEN1 | safe }}</td>
+                                                    <td>{{ MEN1n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ MEN2 | safe }}</td>
+                                                    <td>{{ MEN2n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ MEN3 | safe }}</td>
+                                                    <td>{{ MEN3n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ MEN4 | safe }}</td>
+                                                    <td>{{ MEN4n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ MEN5 | safe }}</td>
+                                                    <td>{{ MEN5n | safe }}</td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="top-campaign">
+                                    <h3 class="title-3 m-b-30">Top hashtags</h3>
+                                    <div class="table-responsive">
+                                        <table class="table table-top-campaign">
+                                            <tbody>
+                                                <tr>
+                                                    <td>{{ HT1 | safe }}</td>
+                                                    <td>{{ HT1n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ HT2 | safe }}</td>
+                                                    <td>{{ HT2n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ HT3 | safe }}</td>
+                                                    <td>{{ HT3n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ HT4 | safe }}</td>
+                                                    <td>{{ HT4n | safe }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>{{ HT5 | safe }}</td>
+                                                    <td>{{ HT5n | safe }}</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <h2 class="title-1 m-b-25">Tuits más favoriteados</h2>
+                                <div class="table-responsive table--no-card m-b-40">
+                                    <table class="table table-borderless table-striped table-earning">
+                                        <thead>
+                                            <tr>
+                                                <th>Num FAV</th>
+                                                <th>Texto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{{ FAV1n | safe }}</td>
+                                                <td>{{ FAV1t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV2n | safe }}</td>
+                                                <td>{{ FAV2t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV3n | safe }}</td>
+                                                <td>{{ FAV3t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV4n | safe }}</td>
+                                                <td>{{ FAV4t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV5n | safe }}</td>
+                                                <td>{{ FAV5t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV6n | safe }}</td>
+                                                <td>{{ FAV6t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV7n | safe }}</td>
+                                                <td>{{ FAV7t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV8n | safe }}</td>
+                                                <td>{{ FAV8t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV9n | safe }}</td>
+                                                <td>{{ FAV9t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ FAV10n | safe }}</td>
+                                                <td>{{ FAV10t | safe }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <h2 class="title-1 m-b-25">Tuits más retuiteados</h2>
+                                    <div class="table-responsive table--no-card m-b-40">
+                                        <table class="table table-borderless table-striped table-earning">
+                                            <thead>
+                                                <tr>
+                                                    <th>Num RT</th>
+                                                <th>Texto</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>{{ RT1n | safe }}</td>
+                                                <td>{{ RT1t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT2n | safe }}</td>
+                                                <td>{{ RT2t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT3n | safe }}</td>
+                                                <td>{{ RT3t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT4n | safe }}</td>
+                                                <td>{{ RT4t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT5n | safe }}</td>
+                                                <td>{{ RT5t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT6n | safe }}</td>
+                                                <td>{{ RT6t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT7n | safe }}</td>
+                                                <td>{{ RT7t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT8n | safe }}</td>
+                                                <td>{{ RT8t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT9n | safe }}</td>
+                                                <td>{{ RT9t | safe }}</td>
+                                            </tr>
+                                            <tr>
+                                                <td>{{ RT10n | safe }}</td>
+                                                <td>{{ RT10t | safe }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="row">
+                            <div class="col-lg-12">
+                                <div class="au-card recent-report">
+                                    <div class="au-card-inner">
+                                        <h3 class="title-2 tm-b-5">Polaridad</h3>
+                                        <div class="chart-info" align="center">
+                                            {{ div5 | safe }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MAIN CONTENT-->
+            <!-- END PAGE CONTAINER--   >
+        </div>
+
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'vendor/jquery-3.2.1.min.js' %}"></script>
+    <!-- Bootstrap JS-->
+    <script src="{% static 'vendor/bootstrap-4.1/popper.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-4.1/bootstrap.min.js' %}"></script>
+    <!-- Vendor JS       -->
+    <script src="{% static 'vendor/slick/slick.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+    <script src="{% static 'vendor/animsition/animsition.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-progressbar/bootstrap-progressbar.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/counter-up/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'vendor/counter-up/jquery.counterup.min.js' %}">
+    </script>
+    <script src="{% static 'vendor/circle-progress/circle-progress.min.js' %}"></script>
+    <script src="{% static 'vendor/perfect-scrollbar/perfect-scrollbar.js' %}"></script>
+    <script src="{% static 'vendor/chartjs/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/select2/select2.min.js' %}">
+    </script>
+
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.15.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.15.min.js"></script>
+
+    <!-- Main JS-->
+    <script src="/static/js/main.js"></script>
+    {{ script1 | safe }}
+    {{ script2 | safe }}
+    {{ script3 | safe }}
+    {{ script4 | safe }}
+    {{ script5 | safe }}
+
+
+
+
+</body>
+
+</html>
+<!-- end document-->
